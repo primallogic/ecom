@@ -1,7 +1,7 @@
 ---
 import Logo from "./Logo.astro";
 import CartIcon from "./CartIcon.svelte";
-import NavMenu from "./NavMenu.svelte";
+
 ---
 
 <header class="sticky top-0 z-40">
@@ -10,12 +10,11 @@ import NavMenu from "./NavMenu.svelte";
       <a href="/">
         <span class="sr-only">Logo</span>
         <!-- <Logo /> -->
-        <NavMenu />
-      </a>
+              </a>
       <h1
         class="flex justify-center text-sm font-semibold text-gray-900 sm:text-xl"
       >
-        Ecofriendly Store
+        <a href="/">Ecofriendly Store</a>
       </h1>
       <div class="justify-self-end">
         <CartIcon client:load />
